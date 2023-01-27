@@ -1,0 +1,31 @@
+.discovery-container{
+    height: 100%;
+    width: 100%;
+  
+}
+.title-text{
+position: relative;
+left: 7rem;
+top: 1rem;
+font-family: 'Playfair Display';
+font-style: normal;
+font-weight: 600;
+font-size: 3.8rem;
+color: #DCDCDC;
+}
+
+.discover-contain{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    position: relative;
+    bottom: 3rem;
+    row-gap: 50px;
+    padding: 40px;
+    margin: 100px 40px 40px;
+    left: 1%;
+}
+
+.showbtn{
+    position: relative;
+}

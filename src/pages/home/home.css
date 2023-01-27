@@ -1,0 +1,209 @@
+.home{
+    width: 100%;
+    height: 100%;
+    
+}
+
+.ipsacontainer{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.ipsaavaliable{
+    position: relative;
+    padding-left: 6.5rem;
+}
+
+.ipsacontainer span{
+    position: relative;
+    color: #6A6A6A;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    }
+
+    #apple-store{
+        position: relative;
+        left: 40px;
+        top: 2px;
+        width: 22px;
+        height: 22px;
+    }
+
+    #play-store{
+        position: relative;
+        left: 30px;
+        top: 4px;
+        width: 24px;
+        height: 22px;
+    }
+
+    .ipsadownload{
+        position: relative;
+        padding-left: 6.5rem;
+    }
+
+    .ipsacontainer h1{
+        position: relative;
+        
+    width: 572px;
+    height: 204px;
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 86px;
+    line-height: 102px;
+    color: #A5A5A5;
+    }
+
+    .ipsacontainer p{
+        position: relative;
+    width: 733px;
+    top: 2rem;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 40px;
+    color: #6A6A6A;
+    }
+
+    .dual-img{
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        position: relative;
+        left: 60rem;
+        bottom: 27rem;
+        width: 386px;
+        height: 858px;
+        border: 2px solid #BABABA;
+        border-radius: 22px;
+        background-color: aqua;
+        }
+
+        #img1{
+            position: absolute;
+            top: 40px;
+            left: 230px;
+        }
+
+        #img2{
+            position: relative;
+        }
+
+        .testimoni{
+            position: relative;
+            padding-left: 7rem;
+        }
+
+
+        .testimoni p{
+            position: relative;
+            width: 733px;
+            left: 20rem;
+            bottom: 12rem;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 26px;
+            line-height: 40px;
+            color: #6A6A6A;
+        }
+
+        .testimonia{
+            position: relative;
+            bottom: 30rem;
+        
+        }
+
+        .business{
+            position: relative;
+            padding-left: 6.5rem;
+            height: 610px;
+        }
+
+        .business h1{
+            position: relative;
+            width: 349px;
+        height: 204px;
+        top: 4px;
+        font-family: 'Playfair Display';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 86px;
+        line-height: 102px;
+        color: #A5A5A5;
+        }
+
+        .business p{
+            position: relative;
+        width: 733px;
+        top: 2rem;
+        
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 40px;
+        color: #6A6A6A;
+        }
+
+        .learn{
+            position: relative;
+            top: 3rem;
+          background: #1D1D1D;
+          border-radius: 24px;
+          width: 10rem;
+          height: 50px;
+          cursor: pointer;
+        }
+
+        .circlelearn{
+            width: 96px;
+            height: 26px;
+            position: relative;
+         
+            top: 10px;
+            left: 18px;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 17px;
+            line-height: 26px;
+            color: #878787;
+        }
+
+        .busimg{
+            box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        position: relative;
+        width: 400px;
+        height: 858px;
+        left: 38rem;
+        bottom: 34rem;
+        }
+
+        #img3{
+    position: absolute;
+    top: 19rem;
+    right: 15rem;
+}
+
+#img4{
+    position: relative;
+}
+
+
+
+
+
+    
+        
+   
+
+    

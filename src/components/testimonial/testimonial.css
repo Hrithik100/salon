@@ -1,0 +1,65 @@
+    .testimonial {
+    position: relative;
+    display: flex;
+    top: 21rem;
+    font-size: 1.2rem;
+    padding: 2rem 0;
+  }
+
+#tes-im{
+    position: relative;
+    bottom: 2rem;
+    left: 25px;
+}
+
+  .testimonial p{
+    position: absolute;
+width: 59rem;
+height: 207px;
+top: 10px;
+bottom: 10px;
+
+font-family: 'Playfair Display';
+font-style: normal;
+font-weight: 600;
+font-size: 52.0918px;
+line-height: 69px;
+color: #A5A5A5;
+  }
+
+.auth{
+    position: relative;
+    top: 12.5rem;
+    left: 4rem;
+    width: 59rem;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+font-size: 26.9143px;
+line-height: 40px;
+color: #6A6A6A;
+}
+
+.dots-cont {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-top: 1rem;
+    position: absolute;
+    top: 39rem;
+    left: 19.8rem;
+  }
+  
+  .dot {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #262626;
+    margin-right: 0.5rem;
+    cursor: pointer;
+  }
+  
+  .dot.active {
+    background-color: #6A6A6A;
+  }

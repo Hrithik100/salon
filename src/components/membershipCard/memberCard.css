@@ -1,0 +1,86 @@
+.member{
+    position: relative;
+}
+.memberheading h3{
+    position: relative;
+    font-family: 'Playfair Display';
+font-style: normal;
+font-weight: 600;
+font-size: 43px;
+line-height: 57px;
+
+color: #DCDCDC;
+}
+
+.membercontain {
+    display: grid;
+    position: relative;
+    width: 85%;
+    column-gap: 5px;
+    grid-template-columns: auto auto auto;
+    padding: 5px;
+  }
+  
+  .memberitem {
+    background-color: #00479A;
+    border-radius: 19px;
+    padding: 20px;
+    font-size: 30px;
+    width: 350px;
+    height: 210px;
+    position: relative;
+    margin-top: 1rem ;
+    left: 4rem;
+    
+  }
+  
+  .memberitem h1 {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 31px;
+    line-height: 41px;
+    position: relative;
+  
+  
+    color: #ffffff;
+  }
+  
+  .memberitem h3 {
+    width: 15rem;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    position: relative;
+    bottom: 1rem;
+    color: #ffffff;
+    left: 1rem;
+  }
+  
+  .memberitem h2 {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 31px;
+    line-height: 41px;
+    position: relative;
+    left: 14.5rem;
+    top: 2.5rem;
+    color: #ffffff;
+  }
+  
+  .memberitem span {
+    position: relative;
+    display: flex;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    position: relative;
+    top: 5rem;
+  
+    color: #ffffff;
+  }

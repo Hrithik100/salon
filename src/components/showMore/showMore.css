@@ -1,0 +1,26 @@
+.showMore-button{
+    position: relative;
+    left:42rem;
+    background: rgb(30, 29, 29);
+    border-radius: 24px;
+    width: 150px;
+    height: 29px;
+    cursor: pointer;
+}
+
+.showMore-text{
+    left: 74%;
+    right: 18%;
+    top: 3%;
+    bottom: 92%;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 29px;
+    color: #B68300;
+    gap: 5px;
+}

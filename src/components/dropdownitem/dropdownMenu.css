@@ -1,0 +1,70 @@
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: rgb(25, 24, 24);
+    padding: 9px;
+    margin: 8px;
+    position: absolute;
+    top: 31rem;
+    right: 56rem;
+    width: 28.5rem;
+    height: 13rem;
+    border-radius: 15px;
+    column-gap: 8px;
+    row-gap: 8px;
+  }
+  .grid-item {
+    background-color: #242424;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    font-size: 18px;
+    font-family: 'Poppins';
+    font-weight: 500;
+    line-height: 40px;
+    border-radius: 15px;
+    color: #DCDCDC;
+    height: 2.5rem;
+  }
+
+  #dryer{
+    position: relative;
+    height: 25px;
+    left: 8rem;
+    top: 0.3rem;
+  }
+
+  #face{
+    position: relative;
+    height: 28px;
+    left: 9rem;
+    top: 0.3rem;
+  }
+
+  #nails{
+    position: relative;
+    height: 24px;
+    left: 7.5rem;
+    top: 0.3rem;
+  }
+
+  #removal{
+    position: relative;
+    height: 22px;
+    left: 4.5rem;
+    top: 0.3rem;
+  }
+
+  #massage{
+    position: relative;
+    height: 24px;
+    left: 5rem;
+    top: 0.3rem;
+  }
+
+  #body-back{
+    position: relative;
+    height: 22px;
+    left: 9rem;
+    top: 0.3rem;
+  }
