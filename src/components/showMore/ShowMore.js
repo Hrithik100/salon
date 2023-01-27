@@ -1,14 +1,14 @@
 import { KeyboardArrowDownOutlined } from "@mui/icons-material";
 import React from "react";
-import "./showMore.css"
+import "./showMore.css";
 
-const ShowMore = () => {
+const ShowMore = ({ handleOnClick }) => {
   return (
-    <div className="showMore-button">
+    <div className="showMore-button" onClick={handleOnClick}>
       <div className="showMore-text">
         <span>Show more</span>
         <KeyboardArrowDownOutlined
-          style={{ color: "#B68300",position:"relative",top:2}}
+          style={{ color: "#B68300", position: "relative", top: 2 }}
         />
       </div>
     </div>

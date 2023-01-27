@@ -16,18 +16,19 @@ const Home = () => {
     <div className="home">
       <Slider />
       <DiscoverCat />
+      {/* <div className="circle-glow"></div> */}
       <div className="ipsacontainer">
         <div className="ipsaavaliable">
-        <span>Available on</span>
-        <img id="play-store" src={playStorImg} alt="" />
-        <img id="apple-store" src={appleStorImg} alt="" />
+          <span>Available on</span>
+          <img id="play-store" src={playStorImg} alt="" />
+          <img id="apple-store" src={appleStorImg} alt="" />
         </div>
         <div className="ipsadownload">
-        <h1>Download the IPSA app</h1>
-        <p>
-          With just a few taps, you can find available time slots and schedule
-          an appointment at a time that works for you.
-        </p>
+          <h1>Download the IPSA app</h1>
+          <p>
+            With just a few taps, you can find available time slots and schedule
+            an appointment at a time that works for you.
+          </p>
         </div>
         <div className="dual-img">
           <img id="img1" src={img1} alt="" />
@@ -37,9 +38,8 @@ const Home = () => {
       <div className="testimoni">
         <p>What people are saying about IPSA</p>
         <div className="testimonia">
-        <Testimonial />
+          <Testimonial />
         </div>
-        
       </div>
       <div className="business">
         <h1>IPSA for business</h1>
