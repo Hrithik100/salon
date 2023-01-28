@@ -1,0 +1,79 @@
+.bottombar{
+    background-color: #1B1B1B;
+    border-top: 1px #434343;
+}
+
+.bottombardetails{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+
+.bottomprice span{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 23px;
+line-height: 130.5%;
+/* or 30px */
+
+
+color: #D3D3D3;
+}
+
+.bottomservice{
+    position: relative;
+    right: 34rem;
+}
+
+.bottomservice span{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 23px;
+line-height: 130.5%;
+/* or 30px */
+
+
+color: #D3D3D3;
+
+}
+
+.bottombarbtn{
+    position: relative;
+    height: 40px;
+    width: 150px;
+    
+  }
+  
+  .bottombarbtn1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  
+    gap: 10px;
+    
+    position: relative;
+    width: 140px;
+    height: 40px;
+    background: #B68300;
+    border-radius: 35px;
+    cursor: pointer;
+  }
+  
+  .bottombarbtntext1 span{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: 1px;
+    width: 10rem;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 23px;
+  color: #000000;
+    
+  }

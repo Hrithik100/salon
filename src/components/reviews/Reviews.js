@@ -91,60 +91,66 @@ const Reviews = () => {
                 D
               </Avatar>
               <div className="usercontentdetails">
-              <h2>Dhruva</h2>
-              <span>12 Dec, 2021</span>
-              <div className="star">
-                <StarOutlined style={{ fontSize: 20 }} />
-                <StarOutlined style={{ fontSize: 20 }} />
-                <StarOutlined style={{ fontSize: 20 }} />
-                <StarOutlined style={{ fontSize: 20 }} />
-                <StarOutlined style={{ fontSize: 20 }} />
+                <h2>Dhruva</h2>
+                <span>12 Dec, 2021</span>
+                <div className="star">
+                  <StarOutlined style={{ fontSize: 20 }} />
+                  <StarOutlined style={{ fontSize: 20 }} />
+                  <StarOutlined style={{ fontSize: 20 }} />
+                  <StarOutlined style={{ fontSize: 20 }} />
+                  <StarOutlined style={{ fontSize: 20 }} />
+                </div>
+              </div>
+              <div className="singlecomment">
+                <span>Great service!</span>
               </div>
             </div>
-            <div className="singlecomment">
-              <span>Great service!</span>
-            </div>
-              </div>
-              <div className="usercontent">
-              <Avatar style={{ color: "blue", background: deepOrange[600] , fontWeight: 700,
-fontSize: "48px",
-lineHeight: "72px"}} >
+            <div className="usercontent">
+              <Avatar
+                style={{
+                  color: "blue",
+                  background: deepOrange[600],
+                  fontWeight: 700,
+                  fontSize: "48px",
+                  lineHeight: "72px",
+                }}
+              >
                 D
               </Avatar>
               <div className="usercontentdetails">
-              <h2>Dhruva</h2>
-              <span>12 Dec, 2021</span>
-              <div className="star">
-                <StarOutlined style={{ fontSize: 20 }} />
-                <StarOutlined style={{ fontSize: 20 }} />
-                <StarOutlined style={{ fontSize: 20 }} />
-                <StarOutlined style={{ fontSize: 20 }} />
-                <StarOutlined style={{ fontSize: 20 }} />
+                <h2>Dhruva</h2>
+                <span>12 Dec, 2021</span>
+                <div className="star">
+                  <StarOutlined style={{ fontSize: 20 }} />
+                  <StarOutlined style={{ fontSize: 20 }} />
+                  <StarOutlined style={{ fontSize: 20 }} />
+                  <StarOutlined style={{ fontSize: 20 }} />
+                  <StarOutlined style={{ fontSize: 20 }} />
+                </div>
+              </div>
+              <div className="singlecomment">
+                <span>Great service!</span>
               </div>
             </div>
-            <div className="singlecomment">
-              <span>Great service!</span>
-            </div>
-              </div>
-              <div className="usercontent">
+            <div className="usercontent">
               <Avatar style={{ color: "blue", background: deepOrange[600] }}>
                 D
               </Avatar>
               <div className="usercontentdetails">
-              <h2>Dhruva</h2>
-              <span>12 Dec, 2021</span>
-              <div className="star">
-                <StarOutlined style={{ fontSize: 20 }} />
-                <StarOutlined style={{ fontSize: 20 }} />
-                <StarOutlined style={{ fontSize: 20 }} />
-                <StarOutlined style={{ fontSize: 20 }} />
-                <StarOutlined style={{ fontSize: 20 }} />
+                <h2>Dhruva</h2>
+                <span>12 Dec, 2021</span>
+                <div className="star">
+                  <StarOutlined style={{ fontSize: 20 }} />
+                  <StarOutlined style={{ fontSize: 20 }} />
+                  <StarOutlined style={{ fontSize: 20 }} />
+                  <StarOutlined style={{ fontSize: 20 }} />
+                  <StarOutlined style={{ fontSize: 20 }} />
+                </div>
+              </div>
+              <div className="singlecomment">
+                <span>Great service!</span>
               </div>
             </div>
-            <div className="singlecomment">
-              <span>Great service!</span>
-            </div>
-              </div>
           </div>
         </div>
         <div className="loadMorebutton">

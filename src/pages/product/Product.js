@@ -6,6 +6,7 @@ import {
   StarBorderOutlined,
 } from "@mui/icons-material";
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import MemberCard from "../../components/membershipCard/MemberCard";
 import Reviews from "../../components/reviews/Reviews";
 import VoucherCard from "../../components/vouchercard/VoucherCard";
@@ -76,6 +77,7 @@ const Product = () => {
                 4<p>(312 reviews)</p>
               </span>
             </div>
+            <Link className="link" to={`/product/services`}>
             <div className="bookbtncontain">
               <div className="bookbtn">
                 <div className="bookbtntext">
@@ -83,6 +85,8 @@ const Product = () => {
                 </div>
               </div>
             </div>
+            </Link>
+            
           </div>
         </div>
         <div className="rightdetails">

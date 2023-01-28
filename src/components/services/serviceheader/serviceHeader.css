@@ -1,0 +1,19 @@
+.servicesheader{
+    background-color: #B68300;
+    padding: 40px;
+}
+
+.servicesheader span{
+    display: flex;
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 32.8301px;
+line-height: 49px;
+color: #171717;
+}
+
+.servicesheader p{
+    position: relative;
+    left: 2rem;
+}
