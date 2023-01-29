@@ -1,0 +1,24 @@
+.selectdatecontainer{
+/* background-color: blue; */
+height:100vh
+}
+
+.datemenucart{
+    margin: 0px 300px;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+    bottom: 3rem;
+    right: 4rem;
+}
+
+.datecartleft{
+    background-color: #171717;
+    width: 700px;
+    border-radius: 20px;
+    /* margin: 20px; */
+    position: relative;
+    /* bottom: 20px; */
+}

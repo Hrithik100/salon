@@ -5,14 +5,14 @@ import {
 import React from "react";
 import "./menuCart.css";
 
-const MenuCart = ({item}) => {
+const MenuCart = ({item,handleChange,selected}) => {
   return (
     <div className="menucard">
       <div className="menucarditems">
         <div className="menucarditem">
           <FormControlLabel
             value="Full Head Highlights"
-            control={<Radio  style={{color:"#E8CC2C"}}/>}
+            control={<Radio  style={{color:"#E8CC2C"}} onClick={handleChange} value={item.label} checked={selected.includes(item.label)}/>}
           />
           <div className="menucontentdetail">
           <h1>{item.label}</h1>

@@ -1,22 +1,32 @@
-import React from 'react'
-import DateMenu from '../../components/services/menu/DateMenu'
-import ServiceHeader from '../../components/services/serviceheader/ServiceHeader'
+import React from "react";
+import "./selectDate.css";
+import DateMenu from "../../components/services/menu/datepicker/DateMenu";
+
+import ServiceHeader from "../../components/services/serviceheader/ServiceHeader";
+import MainCart from "../../components/services/menu/MainCart";
+import Bottombar from "../../components/services/bottombar/Bottombar";
 
 const SelectDate = () => {
-
-    const service = {
-        name: "Select date"
-      }
+  const service = {
+    name: "Select date",
+  };
   return (
-    <div className='selectdatecontainer'>
-        <ServiceHeader myService ={service}/>
-        <div className='menucart'>
-            <div className='menucartleft'>
-               <DateMenu/>
-            </div>
+    <>
+    <ServiceHeader myService={service} />
+      <div className="selectdatecontainer">
+        
+        <div className="datemenucart">
+          <div className="datecartleft">
+            <DateMenu />
+          </div>
+          <div className="menucartright">
+            <MainCart />
+          </div>
         </div>
-    </div>
-  )
-}
+      </div>
+      <Bottombar />
+    </>
+  );
+};
 
-export default SelectDate
+export default SelectDate;

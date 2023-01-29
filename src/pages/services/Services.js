@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 
 import Bottombar from "../../components/services/bottombar/Bottombar";
@@ -43,17 +43,41 @@ const Services = () => {
     name: "Select services"
   }
 
+  const [selected,setSelected] = useState([])
+   
+  // store data
+
+  // const [data, setData] = useState([ {
+  //   id: 4,
+  //   label: "Scalp Spa Treatment",
+  //   price: "₹ 1,700",
+  //   time: "1:00 hr",
+  //   desc: "Add this luxurious scalp spa experience to any Cut, Style or Colour Service.",
+  // },]);
+
+  // useEffect(()=> {
+  //   localStorage.setItem("item", JSON.stringify(data))
+  // },[data])
+
+  const handleChange = (e) =>{
+    const selectedoption = e.target.value;
+    if(selected.includes(selectedoption)){
+      setSelected(selected.filter((item)=> item !== selectedoption))
+    }else{
+      setSelected([...selected,selectedoption]);
+    }
+  }
   return (
     <div className="servicescontainer">
       <ServiceHeader myService ={service}/>
       <div className="menucart">
         <div className="menucartleft">
           {servicesmenu.map((item) => (
-            <MenuCart item={item} key={item.id} />
+            <MenuCart item={item} key={item.id}  selected={selected} handleChange={handleChange}/>
           ))}
         </div>
         <div className="menucartright">
-            <MainCart/>
+            <MainCart item={servicesmenu} selected={selected}/>
         </div>
       </div>
       <Bottombar/>

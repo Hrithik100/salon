@@ -1,0 +1,77 @@
+.datepickercontainer{
+/* background-color: yellow; */
+/* height: 42vh; */
+/* padding: 5px; */
+border-radius: 10px;
+}
+
+.dateheader {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    font-family: 'Poppins';
+    position: relative;
+    /* left: 1rem; */
+font-style: normal;
+font-weight: 500;
+font-size: 25px;
+line-height: 38px;
+/* identical to box height */
+color: #AFAFAF;
+/* background-color: aliceblue; */
+  }
+  
+  .daydatecontainer{
+    /* background-color: rgb(173, 9, 173); */
+    /* margin-top: 20px; */
+    padding-top: 10px;
+  }
+
+  .days{
+    /* background-color: blue; */
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    /* margin-left: 40px;
+    margin-right: 20px; */
+    /* padding-left: 5px ; */
+  }
+
+  .days p{
+    margin: 0px 10px;
+    /* background-color: #AFAFAF; */
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 25px;
+line-height: 20px;
+
+text-align: center;
+
+color: #FFFFFF;
+  }
+
+.date{
+    /* background-color: green; */
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 30px;
+    /* margin-left: 40px;
+    margin-right: 20px; */
+    padding: 20px;
+}
+
+.date {
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 18px;
+
+text-align: center;
+
+color: #FFFFFF;
+}
+
+

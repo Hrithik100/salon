@@ -1,7 +1,35 @@
 import React from "react";
 import "./mainCart.css";
 
-const MainCart = () => {
+const MainCart = ({ item, selected }) => {
+  console.log(
+    item.filter((o) => selected.includes(o.label)).map((o) => o.label)
+  );
+
+  const renderMenuItems = () => {
+    return item
+      .filter((o) => selected.includes(o.label))
+      .map((o) => (
+        <>
+          <h1>{o.label}</h1>
+          <span>{o.price}</span>
+          <h2>{o.time}</h2>
+          <hr />
+        </>
+      ));
+  };
+
+ const calculatePrice = item.reduce((acc,obj)=>{
+  return acc + obj.price
+ },0)
+ console.log(calculatePrice)
+
+//  const calculatePrice = () => {
+//   return item.reduce
+//  }
+
+ const totalPrice = calculatePrice
+
   return (
     <div className="maincartcard">
       <div className="maincartcarditem">
@@ -13,12 +41,7 @@ const MainCart = () => {
           <h3>GS Rd, Christian Basti</h3>
           <hr />
         </div>
-        <div className="addeditems">
-          <h1>Wash, Blow Dry + Style</h1>
-          <span>₹ 3,400</span>
-          <h2>2:45 hr</h2>
-          <hr />
-        </div>
+        <div className="addeditems">{renderMenuItems()}</div>
         <div className="totalamount">
           <div className="taxes">
             <h1>Taxes</h1>
@@ -26,7 +49,7 @@ const MainCart = () => {
           </div>
           <div className="amount">
             <h1>Total</h1>
-            <span>₹ 3,600</span>
+            <span>{totalPrice}</span>
           </div>
         </div>
       </div>
