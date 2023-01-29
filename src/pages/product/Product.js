@@ -6,7 +6,7 @@ import {
   StarBorderOutlined,
 } from "@mui/icons-material";
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link,useParams} from "react-router-dom";
 import MemberCard from "../../components/membershipCard/MemberCard";
 import Reviews from "../../components/reviews/Reviews";
 import VoucherCard from "../../components/vouchercard/VoucherCard";
@@ -45,7 +45,7 @@ const Product = () => {
       className={`dot ${currentIndex === index ? "active" : ""}`}
     />
   ));
-
+  
   return (
     <div className="product">
       <div className="topdetails">
