@@ -16,7 +16,7 @@ const MenuCart = ({item,handleChange,selected}) => {
           />
           <div className="menucontentdetail">
           <h1>{item.label}</h1>
-          <span>{item.price}</span>
+          <span>₹ {item.price}</span>
           <h2>{item.time}</h2>
           <p>
          {item.desc}

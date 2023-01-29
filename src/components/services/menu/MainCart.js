@@ -19,16 +19,19 @@ const MainCart = ({ item, selected }) => {
       ));
   };
 
- const calculatePrice = item.reduce((acc,obj)=>{
-  return acc + obj.price
- },0)
- console.log(calculatePrice)
 
-//  const calculatePrice = () => {
-//   return item.reduce
-//  }
+const calculatePrice = item
+    .filter((o) => selected.includes(o.label))
+    .reduce((acc, obj) => {
+      let price = Number(obj.price);
+      return acc + price + 200;
+    }, 0);
 
- const totalPrice = calculatePrice
+
+
+
+ const totalPrice = calculatePrice.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')
+
 
   return (
     <div className="maincartcard">
@@ -49,7 +52,7 @@ const MainCart = ({ item, selected }) => {
           </div>
           <div className="amount">
             <h1>Total</h1>
-            <span>{totalPrice}</span>
+            <span>₹{totalPrice}</span>
           </div>
         </div>
       </div>
