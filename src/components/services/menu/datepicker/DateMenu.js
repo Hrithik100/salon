@@ -27,15 +27,14 @@ const DateMenu = () => {
     }
   };
 
-  const handleSelection = (e) =>{
-    
-    if(e.target.id === "day"){
-        setSelectedDate(
-            new Date(currentYear, currentMonth, e.target.getAttribute("data-day"))
-        )
-        console.log(selectedDate)
+  const handleSelection = (e) => {
+    if (e.target.id === "day") {
+      setSelectedDate(
+        new Date(currentYear, currentMonth, e.target.getAttribute("data-day"))
+      );
+      console.log(selectedDate);
     }
-  }
+  };
 
   return (
     <div className="datepickercontainer">
@@ -44,7 +43,9 @@ const DateMenu = () => {
           onClick={previousMonth}
           style={{ cursor: "pointer", marginRight: 10 }}
         />
-        <p>{monthNames[currentMonth]} {currentYear}</p>
+        <p>
+          {monthNames[currentMonth]} {currentYear}
+        </p>
         <ChevronRightOutlined
           onClick={nextMonth}
           style={{ cursor: "pointer", marginLeft: 10 }}
@@ -57,7 +58,7 @@ const DateMenu = () => {
               <p>{day}</p>
             ))}
           </div>
-          <div className="date" >
+          <div className="date">
             {range(
               1,
               getNumberOfDaysInMonth(currentYear, currentMonth) + 1
@@ -68,9 +69,8 @@ const DateMenu = () => {
                 className={
                   selectedDate?.getTime ===
                   new Date(currentYear, currentMonth, day).getTime()
-                    ? "active"
+                    ? "active1"
                     : ""
-
                 }
                 onClick={handleSelection}
               >

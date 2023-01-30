@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./selectDate.css";
 import DateMenu from "../../components/services/menu/datepicker/DateMenu";
 
@@ -12,9 +12,8 @@ const SelectDate = () => {
   };
   return (
     <>
-    <ServiceHeader myService={service} />
+      <ServiceHeader myService={service} />
       <div className="selectdatecontainer">
-        
         <div className="datemenucart">
           <div className="datecartleft">
             <DateMenu />
