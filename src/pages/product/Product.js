@@ -6,7 +6,9 @@ import {
   StarBorderOutlined,
 } from "@mui/icons-material";
 import React, { useEffect, useState } from "react";
-import { Link,useParams} from "react-router-dom";
+import { Link } from "react-router-dom";
+import Footer from "../../components/footer/Footer";
+import Header from "../../components/header/Header";
 import MemberCard from "../../components/membershipCard/MemberCard";
 import Reviews from "../../components/reviews/Reviews";
 import VoucherCard from "../../components/vouchercard/VoucherCard";
@@ -45,130 +47,137 @@ const Product = () => {
       className={`dot ${currentIndex === index ? "active" : ""}`}
     />
   ));
-  
-  return (
-    <div className="product">
-      <div className="topdetails">
-        <div className="leftdetails">
-          <div className="cate">
-            <h2>Salon</h2>
-          </div>
-          <div className="contentdetails">
-            <h3>Daisy Salon</h3>
-          </div>
-          <div className="locationdetails">
-            <p>
-              <LocationOnOutlined
-                style={{ color: "#B68300", position: "relative", right: 5 }}
-              />
-              GS Rd, Christian Basti
-            </p>
-            <span>
-              <SouthEastOutlined
-                style={{ color: "#B68300", position: "relative", right: 5 }}
-              />
-              1 km away
-            </span>
-            <div className="rat">
-              <span>
-                <StarBorderOutlined
-                  style={{ color: "#B68300", position: "relative", right: 4 }}
-                />
-                4<p>(312 reviews)</p>
-              </span>
-            </div>
-            <Link className="link" to={`/product/services`}>
-            <div className="bookbtncontain">
-              <div className="bookbtn">
-                <div className="bookbtntext">
-                  <span>Book now</span>
-                </div>
-              </div>
-            </div>
-            </Link>
-            
-          </div>
-        </div>
-        <div className="rightdetails">
-          <div className="mainImg">
-            <img id="testimage" src={testimage[currentIndex].img} alt="" />
-            <div className="dotscon">{dots}</div>
-          </div>
-        </div>
-        <div className="arrowicon">
-          <KeyboardArrowDownOutlined style={{ fontSize: 50 }} />
-        </div>
-      </div>
-      <div className="mid">
-        <div className="detailservice">
-          <div className="detailheading">
-          <span className="shopname">Daisy Salon</span>
-          <span className="availableservice">12 services available</span>
-          <div className="bookbtn1">
-            <div className="bookbtntext1">
-              <span>Book now</span>
-            </div>
-          </div>
-          </div>
-          
-          <div class="grid-conta">
-            <div class="grid-content1">
-              Looking for a salon that caters to both men and women? Look no
-              further than Daisy Salon. Our team of stylists are experts at
-              cutting and styling all types of hair, so whether you're in need
-              of a new look or just a quick trim, we've got you covered. We
-              offer a wide range of services including classic cuts, modern
-              styles, and hair coloring. Book today and be ready to be wowed.
-            </div>
 
-            <div class="grid-gr">
-              <div className="locationdetails">
+  return (
+    <>
+      <Header />
+      <div className="product">
+        <div className="topdetails">
+          <div className="leftdetails">
+            <div className="cate">
+              <h2>Salon</h2>
+            </div>
+            <div className="contentdetails">
+              <h3>Daisy Salon</h3>
+            </div>
+            <div className="locationdetails">
+              <p>
+                <LocationOnOutlined
+                  style={{ color: "#B68300", position: "relative", right: 5 }}
+                />
+                GS Rd, Christian Basti
+              </p>
+              <span>
+                <SouthEastOutlined
+                  style={{ color: "#B68300", position: "relative", right: 5 }}
+                />
+                1 km away
+              </span>
+              <div className="rat">
                 <span>
-                  <LocationOnOutlined
-                    style={{
-                      color: "#B68300",
-                      position: "relative",
-                      right: 10,
-                    }}
+                  <StarBorderOutlined
+                    style={{ color: "#B68300", position: "relative", right: 4 }}
                   />
-                  GS Rd, Christian Basti
+                  4<p>(312 reviews)</p>
                 </span>
-                <div className="mapbtn">
-                  <div className="mapbtn1">
-                    <div className="bookbtntext1">
-                      <span>Open map</span>
+              </div>
+              <Link className="link" to={`/product/services`}>
+                <div className="bookbtncontain">
+                  <div className="bookbtn">
+                    <div className="bookbtntext">
+                      <span>Book now</span>
                     </div>
                   </div>
                 </div>
-                <div className="timedetails">
-                  <div className="time">
-                    <AccessTimeOutlined
+              </Link>
+            </div>
+          </div>
+          <div className="rightdetails">
+            <div className="mainImg">
+              <img id="testimage" src={testimage[currentIndex].img} alt="" />
+              <div className="dotscon">{dots}</div>
+            </div>
+          </div>
+          <Link className="link" to="">
+            <div className="arrowicon">
+              <KeyboardArrowDownOutlined style={{ fontSize: 50 }} />
+            </div>
+          </Link>
+        </div>
+        <div className="mid">
+          <div className="detailservice">
+            <div className="detailheading">
+              <span className="shopname">Daisy Salon</span>
+              <span className="availableservice">12 services available</span>
+              <Link className="link" to={`/product/services`}>
+                <div className="bookbtn1">
+                  <div className="bookbtntext1">
+                    <span>Book now</span>
+                  </div>
+                </div>
+              </Link>
+            </div>
+
+            <div className="grid-conta">
+              <div className="grid-content1">
+                Looking for a salon that caters to both men and women? Look no
+                further than Daisy Salon. Our team of stylists are experts at
+                cutting and styling all types of hair, so whether you're in need
+                of a new look or just a quick trim, we've got you covered. We
+                offer a wide range of services including classic cuts, modern
+                styles, and hair coloring. Book today and be ready to be wowed.
+              </div>
+
+              <div className="grid-gr">
+                <div className="locationdetails">
+                  <span>
+                    <LocationOnOutlined
                       style={{
                         color: "#B68300",
                         position: "relative",
-                        right: 14,
-                        fontSize: 22,
+                        right: 10,
                       }}
                     />
-                    Open now 9:00 am - 8:00 pm
+                    GS Rd, Christian Basti
+                  </span>
+                  <div className="mapbtn">
+                    <div className="mapbtn1">
+                      <div className="bookbtntext1">
+                        <span>Open map</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="timedetails">
+                    <div className="time">
+                      <AccessTimeOutlined
+                        style={{
+                          color: "#B68300",
+                          position: "relative",
+                          right: 14,
+                          fontSize: 22,
+                        }}
+                      />
+                      Open now 9:00 am - 8:00 pm
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div className="vouchercontainer">
-            <VoucherCard/>
+        <div className="vouchercontainer">
+          <VoucherCard />
         </div>
         <div className="membercontainer">
-          <MemberCard/>
+          <MemberCard />
         </div>
         <div className="reviewcontainer">
-        <h3>Reviews</h3>
-        <Reviews/>
+          <h3>Reviews</h3>
+          <Reviews />
         </div>
-    </div>
+      </div>
+      <Footer />
+    </>
   );
 };
 

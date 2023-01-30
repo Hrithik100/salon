@@ -1,16 +1,16 @@
-import React from 'react'
-import locationImg from "../../assets/location.png"
+import React from "react";
+import locationImg from "../../assets/location.png";
 import "./dropdownLocation.css";
 
 const DropdownLocation = () => {
   return (
     <div className="location-container">
-        <div className='flex-container'>
+      <div className="flex-container">
         <img id="location" src={locationImg} alt="" />
-        <span className='text'>Current Location</span> 
-        </div>  
+        <span className="text">Current Location</span>
       </div>
-  )
-}
+    </div>
+  );
+};
 
-export default DropdownLocation
+export default DropdownLocation;

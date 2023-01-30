@@ -9,28 +9,28 @@ import bodyImg from "../../assets/human-back.png";
 
 const DropdownMenu = () => {
   return (
-    <div class="grid-container">
-      <div class="grid-item">
+    <div className="grid-container">
+      <div className="grid-item">
         Hair
         <img id="dryer" src={dryerImg} alt="" />
       </div>
-      <div class="grid-item">
+      <div className="grid-item">
         Face
         <img id="face" src={faceImg} alt="" />
       </div>
-      <div class="grid-item">
+      <div className="grid-item">
         Nails
         <img id="nails" src={nailImg} alt="" />
       </div>
-      <div class="grid-item">
+      <div className="grid-item">
         Hair Removal
         <img id="removal" src={hairImg} alt="" />
       </div>
-      <div class="grid-item">
+      <div className="grid-item">
         Massage
         <img id="massage" src={massageImg} alt="" />
       </div>
-      <div class="grid-item">
+      <div className="grid-item">
         Body
         <img id="body-back" src={bodyImg} alt="" />
       </div>

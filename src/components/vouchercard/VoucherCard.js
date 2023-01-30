@@ -7,19 +7,19 @@ const VoucherCard = () => {
       <div className="voucherheading">
         <h3>Vouchers</h3>
         <div className="cardcontainer">
-          <div class="carditem">
+          <div className="carditem">
             <h1>₹ 500</h1>
             <h3>Voucher Value</h3>
             <span>Details</span>
             <h2>Save 12%</h2>
           </div>
-          <div class="carditem">
+          <div className="carditem">
             <h1>₹ 500</h1>
             <h3>Voucher Value</h3>
             <span>Details</span>
             <h2>Save 12%</h2>
           </div>
-          <div class="carditem">
+          <div className="carditem">
             <h1>₹ 500</h1>
             <h3>Voucher Value</h3>
             <span>Details</span>

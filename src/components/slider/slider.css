@@ -68,6 +68,10 @@
   cursor: pointer;
 }
 
+.search-btn:hover {
+  background: #be9224;
+}
+
 .circle-mnu-text {
   left: 74%;
   right: 18%;
@@ -101,6 +105,11 @@
 
   background: #1d1d1d;
   border-radius: 85.0437px;
+  cursor: pointer;
+}
+
+.get-app:hover {
+  background: #2d2d2d;
 }
 
 .getapp-text {
@@ -109,4 +118,33 @@
   font-weight: 500;
   font-size: 17px;
   color: #878787;
+}
+
+.circleglow1 {
+  width: 274px;
+  height: 274px;
+  background: #b68300;
+  filter: blur(265px);
+  position: relative;
+  bottom: 5rem;
+  right: 170px;
+}
+
+.circleglow2 {
+  background: #b68300;
+  width: 19px;
+  height: 19px;
+  border-radius: 50%;
+  position: relative;
+  left: 10rem;
+  bottom: 9rem;
+}
+
+.circleglow3 {
+  background: #b68300;
+  width: 31.94px;
+  height: 31.94px;
+  border-radius: 50%;
+  position: relative;
+  left: 40rem;
 }

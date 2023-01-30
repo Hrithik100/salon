@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 
-
 import Bottombar from "../../components/services/bottombar/Bottombar";
 import MainCart from "../../components/services/menu/MainCart";
 import MenuCart from "../../components/services/menu/MenuCart";
@@ -40,37 +39,42 @@ const Services = () => {
   ];
 
   const service = {
-    name: "Select services"
-  }
+    name: "Select services",
+  };
 
-  const [selected,setSelected] = useState([])
+  const [selected, setSelected] = useState([]);
 
   useEffect(() => {
-    localStorage.setItem("add", JSON.stringify(selected))
-  }, [selected])
+    localStorage.setItem("add", JSON.stringify(selected));
+  }, [selected]);
 
-  const handleChange = (e) =>{
+  const handleChange = (e) => {
     const selectedoption = e.target.value;
-    if(selected.includes(selectedoption)){
-      setSelected(selected.filter((item)=> item !== selectedoption))
-    }else{
-      setSelected([...selected,selectedoption]);
+    if (selected.includes(selectedoption)) {
+      setSelected(selected.filter((item) => item !== selectedoption));
+    } else {
+      setSelected([...selected, selectedoption]);
     }
-  }
+  };
   return (
     <div className="servicescontainer">
-      <ServiceHeader myService ={service}/>
+      <ServiceHeader myService={service} />
       <div className="menucart">
         <div className="menucartleft">
           {servicesmenu.map((item) => (
-            <MenuCart item={item} key={item.id}  selected={selected} handleChange={handleChange}/>
+            <MenuCart
+              item={item}
+              key={item.id}
+              selected={selected}
+              handleChange={handleChange}
+            />
           ))}
         </div>
         <div className="menucartright">
-            <MainCart item={servicesmenu} selected={selected}/>
+          <MainCart item={servicesmenu} selected={selected} />
         </div>
       </div>
-      <Bottombar/>
+      <Bottombar />
     </div>
   );
 };

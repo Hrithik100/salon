@@ -210,7 +210,7 @@ color: #8B8B8B;
 
 .loadMorebutton{
     position: relative;
-    left: 40%;
+    left: 65rem;
     
     background: rgb(30, 29, 29);
     border-radius: 24px;
@@ -219,11 +219,12 @@ color: #8B8B8B;
     cursor: pointer;
 }
 
+.loadMorebutton:hover{
+    background: rgb(37, 37, 37);
+}
 .loadMoretext{
-    left: 74%;
-    right: 18%;
-    top: 3%;
-    bottom: 92%;
+    position: relative;
+    bottom: 10px;
     margin: 10px;
     display: flex;
     justify-content: center;

@@ -1,81 +1,86 @@
+.voucherheading h3 {
+  position: relative;
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 43px;
+  line-height: 57px;
 
-.voucherheading h3{
-    position: relative;
-    font-family: 'Playfair Display';
-font-style: normal;
-font-weight: 600;
-font-size: 43px;
-line-height: 57px;
-
-color: #DCDCDC;
+  color: #dcdcdc;
 }
 
 .cardcontainer {
-    display: grid;
-    position: relative;
-    width: 85%;
-    left: 3rem;
-    column-gap: 5px;
-    grid-template-columns: auto auto auto;
-    padding-top: 1.5rem;
-  }
-  
-  .carditem {
-    background-color: #9f0069;
-    border-radius: 19px;
-    padding: 20px;
-    font-size: 30px;
-    width: 350px;
-    height: 210px;
-    position: relative;
-    left: 1rem;
-  }
-  
-  .carditem h1 {
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 31px;
-    line-height: 41px;
-    position: relative;
-    /* bottom: 1.5rem; */
-  
-    color: #ffffff;
-  }
-  
-  .carditem h3 {
-    width: 8rem;
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 21px;
-    position: relative;
-    /* bottom: 2.5rem; */
-    color: #ffffff;
-    left: 0rem;
-  }
-  
-  .carditem h2 {
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 17px;
-    position: relative;
-    left: 18rem;
-    top: 5.6rem;
-    color: #ffffff;
-  }
-  
-  .carditem span {
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 21px;
-    position: relative;
-    top: 7rem;
-  
-    color: #ffffff;
-  }
+  display: grid;
+  position: relative;
+  width: 85%;
+  left: 3rem;
+  column-gap: 5px;
+  grid-template-columns: auto auto auto;
+  padding-top: 1.5rem;
+}
+
+.carditem {
+  background-color: #9f0069;
+  border-radius: 19px;
+  padding: 20px;
+  font-size: 30px;
+  width: 350px;
+  height: 210px;
+  position: relative;
+  left: 1rem;
+  transition: transform 500ms ease;
+}
+
+.carditem:hover {
+  background-color: #b30f7c;
+  transform: scale(1.05);
+}
+
+.carditem h1 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 31px;
+  line-height: 41px;
+  position: relative;
+  /* bottom: 1.5rem; */
+
+  color: #ffffff;
+}
+
+.carditem h3 {
+  width: 8rem;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  position: relative;
+  /* bottom: 2.5rem; */
+  color: #ffffff;
+  left: 0rem;
+}
+
+.carditem h2 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 17px;
+  position: relative;
+  left: 18rem;
+  top: 5.6rem;
+  color: #ffffff;
+}
+
+.carditem span {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  position: relative;
+  top: 7rem;
+
+  color: #ffffff;
+}

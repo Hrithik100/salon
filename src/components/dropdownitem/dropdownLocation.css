@@ -1,41 +1,45 @@
-.location-container{
-    background-color: rgb(25, 24, 24);
-    padding: 9px;
-    margin: 8px;
-    position: absolute;
-    top: 31rem;
-    right: 24.5rem;
-    width: 29rem;
-    height: 4rem;
-    border-radius: 15px;
-    column-gap: 8px;
-    row-gap: 8px;
+.location-container {
+  background-color: rgb(25, 24, 24);
+  padding: 9px;
+  margin: 8px;
+  position: absolute;
+  top: 31rem;
+  right: 24.5rem;
+  width: 29rem;
+  height: 4rem;
+  border-radius: 15px;
+  column-gap: 8px;
+  row-gap: 8px;
 }
 
-.flex-container{
-    position: relative;
-    background-color: #242424;
-    border: 1px solid rgba(0, 0, 0, 0.8);
-    padding: 10px;
-    font-size: 18px;
-    font-family: 'Poppins';
-    font-weight: 500;
-    line-height: 40px;
-    border-radius: 15px;
-    color: #DCDCDC;
-    height: 2.5rem;
+.flex-container {
+  position: relative;
+  background-color: #242424;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 10px;
+  font-size: 18px;
+  font-family: "Poppins";
+  font-weight: 500;
+  line-height: 40px;
+  border-radius: 15px;
+  color: #dcdcdc;
+  height: 2.5rem;
+  cursor: pointer;
 }
 
-.text{
-    position: relative;
-    left: 6rem;
-    top: 0.2rem;
+.flex-container:hover {
+  background-color: #3d3d3d;
 }
 
-#location{
-    position: relative;
-    height: 25px;
-    top: 0.5rem;
-    left: 1rem;
-    
+.text {
+  position: relative;
+  left: 6rem;
+  top: 0.2rem;
+}
+
+#location {
+  position: relative;
+  height: 25px;
+  top: 0.5rem;
+  left: 1rem;
 }
