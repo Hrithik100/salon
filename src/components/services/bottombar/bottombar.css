@@ -34,7 +34,7 @@
   color: #d3d3d3;
 }
 
-.bottombarbtn {
+/* .bottombarbtn {
   position: relative;
   height: 40px;
   width: 150px;
@@ -68,4 +68,19 @@
   font-size: 15px;
   line-height: 23px;
   color: #000000;
+} */
+
+.daydetails{
+  position: relative;
+  right: 50rem;
+  /* left: 3rem; */
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 15px;
+line-height: 130.5%;
+/* or 30px */
+
+
+color: #D3D3D3;
 }

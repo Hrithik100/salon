@@ -1,36 +1,27 @@
-.servicescontainer {
+.confirmationcontainer {
+  height: 100vh;
 }
 
-.menucart {
+.confirmationcart {
+  margin: 0px 300px;
   display: flex;
   justify-content: center;
-  margin: 0px 300px;
-  padding: 10px;
   gap: 20px;
   position: relative;
   bottom: 3rem;
+  right: 4rem;
 }
 
-.menucartleft {
-  background-color: #171717;
-  width: 700px;
-  border-radius: 20px;
+.bottombarbtnnew {
+  position: relative;
+  left: 38rem;
+  bottom: 2rem;
+
+  width: 345px;
+  height: 62px;
 }
 
-.menucartright {
-  width: 370px;
-  border-radius: 20px;
-}
-
-.bottombarbtnservice {
-  position: absolute;
-  left: 90rem;
-  top: 75rem;
-  height: 40px;
-  width: 150px;
-}
-
-.bottombarbtnservice1 {
+.bottombarbtnnew1 {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -39,14 +30,19 @@
   gap: 10px;
 
   position: relative;
-  width: 140px;
-  height: 40px;
+
+  width: 345px;
+  height: 62px;
   background: #b68300;
   border-radius: 35px;
   cursor: pointer;
 }
 
-.bottombarbtntextservice1 span {
+.bottombarbtnnew1:hover {
+  background-color: #e6b029;
+}
+
+.bottombarbtntextnew span {
   position: relative;
   display: flex;
   justify-content: center;
@@ -55,7 +51,7 @@
   font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
-  font-size: 15px;
+  font-size: 18px;
   line-height: 23px;
   color: #000000;
 }

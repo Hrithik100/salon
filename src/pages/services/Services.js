@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 import Bottombar from "../../components/services/bottombar/Bottombar";
-import MainCart from "../../components/services/menu/MainCart";
+import MainCart1 from "../../components/services/menu/cart/MainCart1";
 import MenuCart from "../../components/services/menu/MenuCart";
 import ServiceHeader from "../../components/services/serviceheader/ServiceHeader";
 import "./services.css";
@@ -71,10 +72,19 @@ const Services = () => {
           ))}
         </div>
         <div className="menucartright">
-          <MainCart item={servicesmenu} selected={selected} />
+          <MainCart1 item={servicesmenu} selected={selected} />
         </div>
       </div>
-      <Bottombar />
+      <Bottombar item={servicesmenu} selected={selected} />
+      <Link to={`/product/services/selectdate`} className="link">
+        <div className="bottombarbtnservice">
+          <div className="bottombarbtnservice1">
+            <div className="bottombarbtntextservice1">
+              <span>Next</span>
+            </div>
+          </div>
+        </div>
+      </Link>
     </div>
   );
 };

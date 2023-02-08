@@ -1,0 +1,24 @@
+.timecontainer {
+  display: grid;
+  grid-template-columns: auto;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.gridiitem {
+  border-bottom: 1px solid #2d2d2d;
+  padding: 10px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.gridiitem h1 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 23.5471px;
+  line-height: 35px;
+
+  color: #c9c9c9;
+}

@@ -43,7 +43,7 @@
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   gap: 30px;
-
+  cursor: pointer;
   padding: 20px;
 }
 
@@ -52,9 +52,16 @@
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
-  line-height: 18px;
+  line-height: 25px;
 
   text-align: center;
 
   color: #ffffff;
+}
+
+.active1{
+  background-color: #b68300;
+  border: 1px solid #afafaf;
+  border-radius: 15%;
+  height: 25px;
 }

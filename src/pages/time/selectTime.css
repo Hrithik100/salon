@@ -1,0 +1,27 @@
+.selecttimecontainer {
+  height: 100vh;
+}
+
+.timemenucart {
+  margin: 0px 300px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  position: relative;
+  bottom: 3rem;
+  right: 4rem;
+}
+
+.timecartleft {
+  background-color: #171717;
+  width: 700px;
+  border-radius: 20px;
+  position: relative;
+  height: 541px;
+  overflow-x: auto;
+  overflow-y: auto;
+}
+
+.timecartleft::-webkit-scrollbar {
+  width: 26px;
+}

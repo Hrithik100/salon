@@ -32,7 +32,6 @@ const DateMenu = () => {
       setSelectedDate(
         new Date(currentYear, currentMonth, e.target.getAttribute("data-day"))
       );
-      console.log(selectedDate);
     }
   };
 
@@ -67,7 +66,7 @@ const DateMenu = () => {
                 id="day"
                 data-day={day}
                 className={
-                  selectedDate?.getTime ===
+                  selectedDate?.getTime() ===
                   new Date(currentYear, currentMonth, day).getTime()
                     ? "active1"
                     : ""

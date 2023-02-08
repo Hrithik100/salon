@@ -18,3 +18,41 @@
   border-radius: 20px;
   position: relative;
 }
+
+.bottombarbtn1 {
+  position: absolute;
+  left: 90rem;
+  top: 60rem;
+  height: 40px;
+  width: 150px;
+}
+
+.bottombarbtn2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  gap: 10px;
+
+  position: relative;
+  width: 140px;
+  height: 40px;
+  background: #b68300;
+  border-radius: 35px;
+  cursor: pointer;
+}
+
+.bottombarbtntext2 span {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  top: 1px;
+  width: 10rem;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 23px;
+  color: #000000;
+}
