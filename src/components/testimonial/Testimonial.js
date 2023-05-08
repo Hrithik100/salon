@@ -44,13 +44,19 @@ const Testimonial = () => {
   ));
 
   return (
-    <div className="slid-con">
+    <div className="slidcon">
       <div className="testimonial">
-        <img id="tes-im" src={testData[currentIndex].img} alt="" />
-        <p>"{testData[currentIndex].testimonial}"</p>
-        <span className="auth">- {testData[currentIndex].author}</span>
+        <div>
+          <img id="tes-im" src={testData[currentIndex].img} alt="" />
+        </div>
+        <div>
+          <p>"{testData[currentIndex].testimonial}"</p>
+          <span className="auth">- {testData[currentIndex].author}</span>
+        </div>
       </div>
-      <div className="dots-cont">{dots}</div>
+      <div className="dotscont">
+        <div className="dotsitem">{dots}</div>
+      </div>
     </div>
   );
 };

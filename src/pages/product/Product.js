@@ -58,28 +58,21 @@ const Product = () => {
               <h2>Salon</h2>
             </div>
             <div className="contentdetails">
-              <h3>Daisy Salon</h3>
+              <h1>Daisy Salon</h1>
             </div>
             <div className="locationdetails">
-              <p>
-                <LocationOnOutlined
-                  style={{ color: "#B68300", position: "relative", right: 5 }}
-                />
-                GS Rd, Christian Basti
-              </p>
-              <span>
-                <SouthEastOutlined
-                  style={{ color: "#B68300", position: "relative", right: 5 }}
-                />
-                1 km away
-              </span>
+              <div className="locationdetail">
+                <LocationOnOutlined style={{ color: "#B68300" }} />
+                <p>GS Rd, Christian Basti</p>
+              </div>
+              <div className="locationdistance">
+                <SouthEastOutlined style={{ color: "#B68300" }} />
+                <span>1 km away</span>
+              </div>
               <div className="rat">
-                <span>
-                  <StarBorderOutlined
-                    style={{ color: "#B68300", position: "relative", right: 4 }}
-                  />
-                  4<p>(312 reviews)</p>
-                </span>
+                <StarBorderOutlined style={{ color: "#B68300" }} />
+                <span>4</span>
+                <p>(312 reviews)</p>
               </div>
               <Link className="link" to={`/product/services`}>
                 <div className="bookbtncontain">
@@ -95,31 +88,32 @@ const Product = () => {
           <div className="rightdetails">
             <div className="mainImg">
               <img id="testimage" src={testimage[currentIndex].img} alt="" />
-              <div className="dotscon">{dots}</div>
+              <div className="dotsco">{dots}</div>
             </div>
           </div>
-          <Link className="link" to="">
+          {/* <Link className="link" to="">
             <div className="arrowicon">
               <KeyboardArrowDownOutlined style={{ fontSize: 50 }} />
             </div>
-          </Link>
+          </Link> */}
         </div>
         <div className="mid">
           <div className="detailservice">
-            <div className="detailheading">
+            <div className="detailheadingtop">
               <span className="shopname">Daisy Salon</span>
-              <span className="availableservice">12 services available</span>
-              <Link className="link" to={`/product/services`}>
-                <div className="bookbtn1">
-                  <div className="bookbtntext1">
-                    <span>Book now</span>
+              <div className="detailservices">
+                <span className="availableservice">12 services available</span>
+                <Link className="link" to={`/product/services`}>
+                  <div className="bookbtn1">
+                    <div className="bookbtntext1">
+                      <span>Book now</span>
+                    </div>
                   </div>
-                </div>
-              </Link>
+                </Link>
+              </div>
             </div>
-
-            <div className="grid-conta">
-              <div className="grid-content1">
+            <div className="detailheadingbottom">
+              <div className="detailheadingcontent">
                 Looking for a salon that caters to both men and women? Look no
                 further than Daisy Salon. Our team of stylists are experts at
                 cutting and styling all types of hair, so whether you're in need
@@ -127,19 +121,16 @@ const Product = () => {
                 offer a wide range of services including classic cuts, modern
                 styles, and hair coloring. Book today and be ready to be wowed.
               </div>
-
-              <div className="grid-gr">
-                <div className="locationdetails">
-                  <span>
+              <div className="detailslocation">
+                <div className="detaillocation">
+                  <div className="locationame">
                     <LocationOnOutlined
                       style={{
                         color: "#B68300",
-                        position: "relative",
-                        right: 10,
                       }}
                     />
-                    GS Rd, Christian Basti
-                  </span>
+                    <span>GS Rd, Christian Basti</span>
+                  </div>
                   <div className="mapbtn">
                     <div className="mapbtn1">
                       <div className="bookbtntext1">
@@ -147,17 +138,18 @@ const Product = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="timedetails">
-                    <div className="time">
-                      <AccessTimeOutlined
-                        style={{
-                          color: "#B68300",
-                          position: "relative",
-                          right: 14,
-                          fontSize: 22,
-                        }}
-                      />
+                </div>
+                <div className="timedetails">
+                  <div className="time">
+                    <AccessTimeOutlined
+                      style={{
+                        color: "#B68300"
+                      }}
+                    />
+                    <div className="timetable">
+                      <span>
                       Open now 9:00 am - 8:00 pm
+                      </span>
                     </div>
                   </div>
                 </div>

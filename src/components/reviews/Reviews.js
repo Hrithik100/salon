@@ -29,7 +29,7 @@ const Reviews = () => {
   ];
   return (
     <div className="reviewconta">
-      <div className="review">
+      <div className="reviewleft">
         <div className="totalratings">
           <div className="totalstars">
             <StarOutlined style={{ color: "#B68300" }} />
@@ -39,19 +39,15 @@ const Reviews = () => {
             <StarBorderOutlined style={{ color: "#B68300" }} />
           </div>
           <div className="totalreview">
-            <div className="singlestar">
-              <span>
-                <StarOutlined
-                  style={{
-                    color: "#B68300",
-                    position: "relative",
-                    top: 3,
-                    right: 7,
-                    fontSize: 20,
-                  }}
-                />
-                Good<p>(312 reviews)</p>
-              </span>
+            <StarOutlined
+              style={{
+                color: "#B68300",
+                fontSize: 20,
+              }}
+            />
+            <div className="singlereview">
+              <span>Good</span>
+              <p>(312 reviews)</p>
             </div>
           </div>
         </div>
@@ -59,57 +55,70 @@ const Reviews = () => {
           <h3>Ratings</h3>
           <div className="allstarcontainer">
             <div className="allstar">
-              <StarOutlined />
-              <StarOutlined />
-              <StarOutlined />
-              <StarOutlined />
-              <StarOutlined />
+              <div className="staritem">
+                <StarOutlined />
+                <StarOutlined />
+                <StarOutlined />
+                <StarOutlined />
+                <StarOutlined />
+              </div>
               <span>(65 reviews)</span>
             </div>
             <div className="allstar">
-              <StarOutlined />
-              <StarOutlined />
-              <StarOutlined />
-              <StarOutlined />
-              <StarBorderOutlined />
+              <div className="staritem">
+                <StarOutlined />
+                <StarOutlined />
+                <StarOutlined />
+                <StarOutlined />
+                <StarBorderOutlined />
+              </div>
               <span>(230 reviews)</span>
             </div>
             <div className="allstar">
-              <StarOutlined />
-              <StarOutlined />
-              <StarOutlined />
-              <StarBorderOutlined />
-              <StarBorderOutlined />
+              <div className="staritem">
+                <StarOutlined />
+                <StarOutlined />
+                <StarOutlined />
+                <StarBorderOutlined />
+                <StarBorderOutlined />
+              </div>
               <span>(17 reviews)</span>
             </div>
             <div className="allstar">
-              <StarOutlined />
-              <StarOutlined />
-              <StarBorderOutlined />
-              <StarBorderOutlined />
-              <StarBorderOutlined />
+              <div className="staritem">
+                <StarOutlined />
+                <StarOutlined />
+                <StarBorderOutlined />
+                <StarBorderOutlined />
+                <StarBorderOutlined />
+              </div>
               <span>(0 reviews)</span>
             </div>
             <div className="allstar">
-              <StarOutlined />
-              <StarBorderOutlined />
-              <StarBorderOutlined />
-              <StarBorderOutlined />
-              <StarBorderOutlined />
+              <div className="staritem">
+                <StarOutlined />
+                <StarBorderOutlined />
+                <StarBorderOutlined />
+                <StarBorderOutlined />
+                <StarBorderOutlined />
+              </div>
               <span>(0 reviews)</span>
             </div>
           </div>
         </div>
       </div>
-      <div className="user-reviev-section">
+      <div className="userrevievsection">
         {USER_COMMENTS.map(({ username, date, comment, bgColor }) => (
-          <div className="comment-section">
-            <div className="comment-wrapper">
-              <div className="comment-user-info">
-                <div className="avatar" style={{ backgroundColor: `${bgColor}` }}>
+          <div className="commentsection">
+            <div className="commentwrapper">
+              <div className="commentuserinfo">
+                <div
+                  className="avatar"
+                  style={{ backgroundColor: `${bgColor}` }}
+                >
                   {username.charAt()}
                 </div>
-                <div className="user-info">
+                <div className="userinfo">
                   <h2>{username}</h2>
                   <p>{date}</p>
                 </div>
@@ -122,17 +131,9 @@ const Reviews = () => {
                 <StarOutlined style={{ fontSize: 20 }} />
               </div>
             </div>
-            <div className="user-comment">{comment}</div>
+            <div className="usercomment">{comment}</div>
           </div>
         ))}
-      </div>
-      <div className="loadMorebutton">
-        <div className="loadMoretext">
-          <span>Load more</span>
-          <KeyboardArrowDownOutlined
-            style={{ color: "#B68300", position: "relative", top: 2 }}
-          />
-        </div>
       </div>
     </div>
   );

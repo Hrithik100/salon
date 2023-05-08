@@ -40,25 +40,27 @@ const Slider = () => {
   });
   return (
     <div className="container">
-      <div className="schedule-text">
-        <p>Schedule your appointment for beauty services.</p>
+      <div className="scheduleText">
+        <span>Schedule your appointment for beauty services.</span>
       </div>
-      <div className="search-container">
-        <div className="search" ref={menuRef}>
-          <i
-            className="fa-solid fa-search"
-            style={{ cursor: "pointer" }}
-            onClick={() => {
-              setOpenMenu((prev) => !prev);
-            }}
-          ></i>
-          <input
-            className="input-card"
-            type="text"
-            placeholder="Search for services"
-          />
-          {openMenu && <DropdownMenu />}
-          <div ref={locRef}>
+      <div className="searchContainer">
+        <div className="search">
+          <div className="searchbox" ref={menuRef}>
+            <i
+              className="fa-solid fa-search"
+              style={{ cursor: "pointer" }}
+              onClick={() => {
+                setOpenMenu((prev) => !prev);
+              }}
+            ></i>
+            <input
+              className="input-card"
+              type="text"
+              placeholder="Search for services"
+            />
+            {openMenu && <DropdownMenu />}
+          </div>
+          <div className="locationbox" ref={locRef}>
             <i
               className="fa-sharp fa-solid fa-location-dot"
               style={{ cursor: "pointer" }}
@@ -69,14 +71,12 @@ const Slider = () => {
             <input className="input-card" type="text" placeholder="Location" />
             {openMenuLocation && <DropdownLocation />}
           </div>
-          <div className="search-btn">
-            <div className="circle-mnu-text">
+          <button className="searchbtn">
               <span>Search</span>
               <KeyboardArrowRightOutlined
-                style={{ margin: 3.5, color: "#151515" }}
+                style={{ fontSize:22, color: "#151515" }}
               />
-            </div>
-          </div>
+          </button>
         </div>
       </div>
       <div className="circleglow1"></div>

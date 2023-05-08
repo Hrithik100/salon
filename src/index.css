@@ -3,8 +3,26 @@
 * {
     scroll-behavior: smooth;
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
   }
 
   body{
     background-color:  rgba(19, 19, 19, 1);
+}
+
+input {
+  border: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-text-fill-color: #989898;
+  transition: background-color 5000s ease-in-out 0s;
 }

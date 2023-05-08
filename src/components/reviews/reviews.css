@@ -1,239 +1,152 @@
-.reviewconta{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 50px;
-    padding: 15px;
-    position: relative;
-    padding-left: 3rem;
+.reviewconta {
+  display: flex;
+  justify-content: space-between;
+  margin: 3rem 8rem;
 }
 
-.totalratings{
-    position: relative;
-    left: 1.5rem;
+.reviewleft {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.totalratings {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
-.totalreview{
-    position: relative;
-}
-.totalreview span{
-    position: relative;
-    left: 0.5rem;
-    font-family: 'Poppins';
-font-style: normal;
-font-weight: 500;
-font-size: 18px;
-line-height: 30px;
-color: #E8CC2C;
+.totalreview {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
-.totalreview p{
-    position: relative;
-    color:#757575;
-    width: 146px;
-    left: 5rem;
-    bottom: 1.8rem;
+.singlereview {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.singlereview span {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
+  color: #e8cc2c;
 }
 
-.singleratings{
-    position: relative;
-    right: 2rem;
+.singlereview p {
+  color: #757575;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 32px;
+  color: #757575;
 }
 
-.singleratings h3{
-    font-family: 'Poppins';
-font-style: normal;
-font-weight: 500;
-font-size: 24px;
-line-height: 36px;
-color: #FFFFFF;
-
+.singleratings h3 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24.16px;
+  line-height: 36px;
+  color: #ffffff;
 }
 
-.allstarcontainer{
-    position: relative;
-    padding-left: 3.5rem;
+.allstarcontainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
-.allstar{
-    color: #E8CC2C;
-}
- .allstar span{
-    position: relative;
-    left: 2rem;
-    bottom: 4px;
-    font-family: 'Poppins';
-font-style: normal;
-font-weight: 500;
-font-size: 18px;
-line-height: 30px;
-color: #757575;
- }
-
-/* .userreviews{
-   
+.allstar {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
 }
 
-.userreview{
-    
-    margin: 20px 0px;
+.staritem {
+  color: #e8cc2c;
 }
-
-
-
-.usercontent{
-    position: relative;
-   
+.allstar span {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
+  color: #757575;
 }
-
-.usercontentdetails{
-   
-    margin: 20px 25px;
-    position: relative;
-    left: 1.5rem;
-    bottom: 3.5rem;
-
-}
-
-.usercontent h2{
-    font-family: 'Poppins';
-font-style: normal;
-font-weight: 400;
-font-size: 25px;
-line-height: 38px;
-color: #FFFFFF;
-}
-
-.usercontent span{
-    position: relative;
-    font-family: 'Poppins';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 24px;
-color: #8B8B8B;
-}
-
-.star{
-    position: relative;
-    left: 28rem;
-    width: 102px;
-    bottom: 3rem;
-    color: #E8CC2C;
-    
-    margin-left:10px
-}
-
-.singlecomment span{
-    position: relative;
-    font-family: 'Poppins';
-    position: relative;
-    bottom: 4rem;
-font-style: normal;
-font-weight: 400;
-font-size: 19px;
-line-height: 30px;
-color: #8B8B8B;
-} */
 
 /* comment-section */
-.user-reviev-section {
-    display: flex;
-    flex-direction: column;
-    gap: 70px;
-  }
-  
-  .comment-section {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-  
-  .comment-wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .comment-user-info {
-    display: flex;
-    align-items: center;
-    gap: 36px;
-  }
-  
-  .avatar {
-    width: 91px;
-    height: 91px;
-    background-color: #ff8b8b;
-    border-radius: 50%;
-    display: grid;
-    place-items: center;
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 72px;
-    color: rgba(0, 0, 0, 0.63);
-  }
-  
-  .user-info > h2 {
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 25.1934px;
-    line-height: 38px;
-    color: #ffffff;
-  }
-  
-  .user-info > p {
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16.0321px;
-    line-height: 24px;
-    color: #8b8b8b;
-  }
-  
-  .user-comment {
-    margin-left: 40px;
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 19.897px;
-    line-height: 30px;
-    color: #8b8b8b;
-  }
-  
-  .stars {
-    color: #e8cc2c;
-  }
-  
-
-.loadMorebutton{
-    position: relative;
-    left: 65rem;
-    
-    background: rgb(30, 29, 29);
-    border-radius: 24px;
-    width: 150px;
-    height: 29px;
-    cursor: pointer;
+.userrevievsection {
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
 }
 
-.loadMorebutton:hover{
-    background: rgb(37, 37, 37);
+.commentsection {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
-.loadMoretext{
-    position: relative;
-    bottom: 10px;
-    margin: 10px;
-    display: flex;
-    justify-content: center;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 29px;
-    color: #B68300;
-    gap: 5px;
-   
+
+.commentwrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.commentuserinfo {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+}
+
+.avatar {
+  width: 91px;
+  height: 91px;
+  background-color: #ff8b8b;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 72px;
+  color: rgba(0, 0, 0, 0.63);
+}
+
+.userinfo > h2 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25.1934px;
+  line-height: 38px;
+  color: #ffffff;
+}
+
+.userinfo > p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16.0321px;
+  line-height: 24px;
+  color: #8b8b8b;
+}
+
+.usercomment {
+  margin-left: 40px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19.897px;
+  line-height: 30px;
+  color: #8b8b8b;
+}
+
+.stars {
+  padding-left: 3rem;
+  color: #e8cc2c;
 }

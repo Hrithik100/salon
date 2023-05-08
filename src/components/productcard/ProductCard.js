@@ -15,14 +15,17 @@ const ProductCard = ({ item }) => {
           <img src={item.img} alt="" />
         </div>
         <div className="content">
-          <h3>{item.title}</h3>
+          <div>
+          <h2>{item.title}</h2>
+          <h3>{item.cat}</h3>
+          </div>
+          
           <span>
             <StarBorderOutlined />
             {item.rating}
           </span>
         </div>
         <div className="cat">
-          <h2>{item.cat}</h2>
         </div>
 
         <div className="details">

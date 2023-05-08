@@ -106,9 +106,9 @@ const DiscoverCat = () => {
   };
 
   return (
-    <div className="discovery-container">
-      <span className="title-text">Discover</span>
-      <div className="discover-contain">
+    <div className="discoverycontainer">
+      <span className="titletext">Discover</span>
+      <div className="discovercontain">
         {salonCardsData.map((item) => (
           <ProductCard item={item} key={item.id} />
         ))}

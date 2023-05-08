@@ -1,11 +1,9 @@
-.discovery-container {
-  height: 100%;
-  width: 100%;
+.discoverycontainer {
+  margin-top: 6rem;
+  padding: 1rem;
 }
-.title-text {
-  position: relative;
-  left: 7rem;
-  top: 1rem;
+.titletext {
+  padding: 5rem;
   font-family: "Playfair Display";
   font-style: normal;
   font-weight: 600;
@@ -13,14 +11,12 @@
   color: #dcdcdc;
 }
 
-.discover-contain {
+.discovercontain {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  position: relative;
-  bottom: 3rem;
   gap: 50px;
-  padding: 40px;
+  padding: 0 30px;
   margin: 100px 40px 40px;
   left: 1%;
 }

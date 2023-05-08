@@ -16,13 +16,12 @@
 
 .image {
   position: relative;
-  width: 97%;
   height: 220px;
   overflow: hidden;
   padding: 5px;
 }
 
-.image img {
+.image > img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -34,37 +33,31 @@
   display: flex;
   justify-content: space-between;
   color: #b68300;
+  padding: 0.5rem;
 }
 
-.content h3 {
-  position: relative;
+.content h2 {
   font-size: 1.2rem;
   font-weight: 500;
   font-family: "Poppins";
   display: flex;
   line-height: 30px;
-  bottom: 5px;
-  left: 13px;
+}
+
+.content h3 {
+  color: #dcdcdc;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  line-height: 25px;
 }
 .content span {
-  position: relative;
   display: flex;
   font-size: 17px;
-  right: 10px;
   font-family: "Poppins";
 }
 
 .link {
   text-decoration: none;
-}
-
-.cat {
-  color: #dcdcdc;
-  position: relative;
-  font-size: 10px;
-  line-height: 25px;
-  left: 0.9rem;
-  bottom: 1rem;
 }
 
 .details {

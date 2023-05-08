@@ -1,24 +1,16 @@
 .testimonial {
-  position: relative;
   display: flex;
-  top: 21rem;
-  font-size: 1.2rem;
-  padding: 2rem 0;
+  gap: 2rem;
+  padding-left: 10rem;
 }
 
-#tes-im {
-  position: relative;
-  bottom: 2rem;
-  left: 25px;
+.testimonial > img {
+
 }
 
 .testimonial p {
-  position: absolute;
   width: 59rem;
   height: 207px;
-  top: 10px;
-  bottom: 10px;
-
   font-family: "Playfair Display";
   font-style: normal;
   font-weight: 600;
@@ -28,9 +20,6 @@
 }
 
 .auth {
-  position: relative;
-  top: 12.5rem;
-  left: 4rem;
   width: 59rem;
   font-family: "Poppins";
   font-style: normal;
@@ -40,15 +29,14 @@
   color: #6a6a6a;
 }
 
-.dots-cont {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 10px;
+.dotscont {
   margin-top: 1rem;
-  position: absolute;
-  top: 39rem;
-  left: 19.8rem;
+}
+
+.dotsitem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .dot {
