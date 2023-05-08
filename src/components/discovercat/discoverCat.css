@@ -15,9 +15,7 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  gap: 50px;
-  margin: 100px 70px;
-  left: 1%;
+  gap: 2rem;
 }
 
 .showbtn {
